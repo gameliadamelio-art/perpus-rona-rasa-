@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --matcha-pale: #E8F0E3;
+  --sage-soft: #DCE8D5;
+  --mint-cream: #F3F7EF;
+  --warm-ivory: #FAF9F3;
+  --olive-soft: #A6B59A;
+  --forest-green: #405344;
+  --forest-deep: #2A382D;
+  --ink-primary: #222B24;
+  --ink-muted: #556358;
+  --hairline: rgba(64, 83, 68, 0.14);
+}
+
+@layer base {
+  html {
+    background-color: var(--warm-ivory);
+    color: var(--ink-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--warm-ivory);
+    color: var(--ink-primary);
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: 'Fraunces', Georgia, serif;
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid #405344;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

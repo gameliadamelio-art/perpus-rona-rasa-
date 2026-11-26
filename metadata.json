@@ -1,0 +1,6 @@
+{
+  "name": "Perpustakaan Rona Rasa",
+  "description": "Perpustakaan digital independen untuk membaca, mendengarkan, menonton, dan mengarsipkan karya sastra serta budaya Indonesia. Dari Kata, Menuju Rasa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
